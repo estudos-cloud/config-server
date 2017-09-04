@@ -8,7 +8,13 @@ spring:
         git:
           uri: https://github.com/estudos-cloud/config-repo.git
           clone-on-start: true
-          
+          force-pull: true
+          repos:
+            app-a:
+              patter: app-a-*
+              uri: https://github.com/estudos-cloud/app-a-config.git
+              force-pull: true
+
 security:
   user:
     name: root
